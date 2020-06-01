@@ -14,3 +14,11 @@
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
+
+$router->get('/data', function () use ($router) {
+    $data = array(
+        "version" => $router->app->version(),
+        "author" => "Christoph Stockinger
+    );
+    return json_encode($data);
+});
