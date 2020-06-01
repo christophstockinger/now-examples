@@ -18,7 +18,7 @@ $router->get('/', function () use ($router) {
 $router->get('/data', function () use ($router) {
     $data = array(
         "version" => $router->app->version(),
-        "author" => "Christoph Stockinger
+        "author" => "Christoph Stockinger"
     );
     return json_encode($data);
 });
